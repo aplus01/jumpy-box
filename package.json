@@ -1,0 +1,22 @@
+{
+  "name": "jumpy-box",
+  "version": "1.0.0",
+  "description": "Box that can jump using keyboard input",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aplus01/jumpy-box.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aplus01/jumpy-box/issues"
+  },
+  "homepage": "https://github.com/aplus01/jumpy-box#readme",
+  "dependencies": {
+    "prettier": "^2.3.0"
+  }
+}
