@@ -15,7 +15,7 @@ export default class Game {
   }
 
   draw(ctx) {
-    ctx.fillStyle = '#00000080';
+    ctx.fillStyle = '#00000026';
     ctx.fillRect(0, 0, this.width, this.height);
     this.gameObjs.forEach((obj) => {
       obj.draw(ctx);

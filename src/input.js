@@ -3,7 +3,6 @@ import { MOVEMENT } from './box.js';
 export default class Input {
   constructor(game) {
     document.addEventListener('keydown', (key) => {
-      console.log(key);
       switch (key.code) {
         case 'ArrowRight':
           game.box.move(MOVEMENT.RIGHT);
@@ -17,6 +16,17 @@ export default class Input {
           break;
         case 'ArrowDown':
           game.box.move(MOVEMENT.DOWN);
+      }
+    });
+
+    document.addEventListener('keyup', (key) => {
+      switch (key.code) {
+        case 'ArrowRight':
+        case 'ArrowLeft':
+          game.box.stop('run');
+          break;
+        case 'ArrowUp':
+          game.box.stop('jump');
       }
     });
   }
